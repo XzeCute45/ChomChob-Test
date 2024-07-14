@@ -1,157 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-07-15T03:25:24.444486" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-07-15T03:30:00.022196" rpa="false" schemaversion="5">
 <suite id="s1" name="Api" source="C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot">
-<test id="s1-t1" name="Test GET All Users" line="12">
-<kw name="GET All Users">
-<kw name="Get Request">
-<msg time="2024-07-15T03:25:24.470370" level="FAIL">No keyword with name 'Get Request' found.</msg>
+<test id="s1-t1" name="Test GET All Users" line="11">
+<kw name="GET Request">
+<msg time="2024-07-15T03:30:00.048109" level="FAIL">No keyword with name 'GET Request' found.</msg>
 <var>${response}</var>
 <arg>${BASE_URL}/users</arg>
-<status status="FAIL" start="2024-07-15T03:25:24.469373" elapsed="0.000997">No keyword with name 'Get Request' found.</status>
-</kw>
-<return>
-<value>${response}</value>
-<status status="NOT RUN" start="2024-07-15T03:25:24.470370" elapsed="0.000000"/>
-</return>
-<doc>Send a GET request to retrieve all users</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.469373" elapsed="0.000997">No keyword with name 'Get Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.048109" elapsed="0.000000">No keyword with name 'GET Request' found.</status>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="NOT RUN" start="2024-07-15T03:25:24.470370" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.048109" elapsed="0.000000"/>
 </kw>
 <doc>Verify that we can get all users</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.468376" elapsed="0.001994">No keyword with name 'Get Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.047112" elapsed="0.000997">No keyword with name 'GET Request' found.</status>
 </test>
-<test id="s1-t2" name="Test GET User Info" line="17">
-<kw name="GET User Info">
-<kw name="Get Request">
-<msg time="2024-07-15T03:25:24.471366" level="FAIL">No keyword with name 'Get Request' found.</msg>
+<test id="s1-t2" name="Test GET User Info" line="16">
+<kw name="GET Request">
+<msg time="2024-07-15T03:30:00.050102" level="FAIL">No keyword with name 'GET Request' found.</msg>
 <var>${response}</var>
-<arg>${BASE_URL}/users/${user_id}</arg>
-<status status="FAIL" start="2024-07-15T03:25:24.471366" elapsed="0.000000">No keyword with name 'Get Request' found.</status>
-</kw>
-<return>
-<value>${response}</value>
-<status status="NOT RUN" start="2024-07-15T03:25:24.471366" elapsed="0.000000"/>
-</return>
-<arg>${USER_ID}</arg>
-<doc>Send a GET request to retrieve user info by ID</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.471366" elapsed="0.000000">No keyword with name 'Get Request' found.</status>
+<arg>${BASE_URL}/users/1</arg>
+<status status="FAIL" start="2024-07-15T03:30:00.050102" elapsed="0.000000">No keyword with name 'GET Request' found.</status>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="NOT RUN" start="2024-07-15T03:25:24.472363" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.050102" elapsed="0.000000"/>
 </kw>
 <doc>Verify that we can get information for a specific user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.470370" elapsed="0.001993">No keyword with name 'Get Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.049105" elapsed="0.000997">No keyword with name 'GET Request' found.</status>
 </test>
-<test id="s1-t3" name="Test POST Create User" line="22">
+<test id="s1-t3" name="Test POST Create User" line="21">
 <kw name="POST Create User">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-07-15T03:25:24.473360" level="INFO">${data} = {'name': 'Yourname', 'job': 'Your Position'}</msg>
+<msg time="2024-07-15T03:30:00.051099" level="INFO">${data} = {'name': 'Yourname', 'job': 'Your Position'}</msg>
 <var>${data}</var>
 <arg>name=${name}</arg>
 <arg>job=${job}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-07-15T03:25:24.472363" elapsed="0.000997"/>
+<status status="PASS" start="2024-07-15T03:30:00.051099" elapsed="0.000000"/>
 </kw>
-<kw name="Post Request">
-<msg time="2024-07-15T03:25:24.473360" level="FAIL">No keyword with name 'Post Request' found.</msg>
+<kw name="POST Request">
+<msg time="2024-07-15T03:30:00.052095" level="FAIL">No keyword with name 'POST Request' found.</msg>
 <var>${response}</var>
 <arg>${BASE_URL}/users</arg>
 <arg>json=${data}</arg>
-<status status="FAIL" start="2024-07-15T03:25:24.473360" elapsed="0.000000">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.052095" elapsed="0.000000">No keyword with name 'POST Request' found.</status>
 </kw>
 <return>
 <value>${response}</value>
-<status status="NOT RUN" start="2024-07-15T03:25:24.473360" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.052095" elapsed="0.000000"/>
 </return>
+<var>${response}</var>
 <arg>Yourname</arg>
 <arg>Your Position</arg>
 <doc>Send a POST request to create a new user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.472363" elapsed="0.000997">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.051099" elapsed="0.000996">No keyword with name 'POST Request' found.</status>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="NOT RUN" start="2024-07-15T03:25:24.474356" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.052095" elapsed="0.000000"/>
 </kw>
 <kw name="Set Suite Variable" owner="BuiltIn">
 <arg>${CREATE_USER_ID}</arg>
 <arg>${response.json()['id']}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<status status="NOT RUN" start="2024-07-15T03:25:24.474356" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.052095" elapsed="0.000000"/>
 </kw>
 <doc>Verify that we can create a new user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.472363" elapsed="0.001993">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.050102" elapsed="0.001993">No keyword with name 'POST Request' found.</status>
 </test>
-<test id="s1-t4" name="Test PATCH Update User" line="28">
+<test id="s1-t4" name="Test PATCH Update User" line="27">
 <kw name="POST Create User" type="SETUP">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-07-15T03:25:24.475353" level="INFO">${data} = {'name': 'Yourname', 'job': 'Your Position'}</msg>
+<msg time="2024-07-15T03:30:00.053092" level="INFO">${data} = {'name': 'Yourname', 'job': 'Your Position'}</msg>
 <var>${data}</var>
 <arg>name=${name}</arg>
 <arg>job=${job}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-07-15T03:25:24.475353" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-15T03:30:00.053092" elapsed="0.000000"/>
 </kw>
-<kw name="Post Request">
-<msg time="2024-07-15T03:25:24.475353" level="FAIL">No keyword with name 'Post Request' found.</msg>
+<kw name="POST Request">
+<msg time="2024-07-15T03:30:00.054089" level="FAIL">No keyword with name 'POST Request' found.</msg>
 <var>${response}</var>
 <arg>${BASE_URL}/users</arg>
 <arg>json=${data}</arg>
-<status status="FAIL" start="2024-07-15T03:25:24.475353" elapsed="0.000000">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.054089" elapsed="0.000000">No keyword with name 'POST Request' found.</status>
 </kw>
 <return>
 <value>${response}</value>
-<status status="NOT RUN" start="2024-07-15T03:25:24.475353" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.054089" elapsed="0.000000"/>
 </return>
 <arg>Yourname</arg>
 <arg>Your Position</arg>
 <doc>Send a POST request to create a new user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.474356" elapsed="0.000997">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.053092" elapsed="0.000997">No keyword with name 'POST Request' found.</status>
 </kw>
 <doc>Verify that we can update an existing user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.474356" elapsed="0.001994">Setup failed:
-No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.053092" elapsed="0.000997">Setup failed:
+No keyword with name 'POST Request' found.</status>
 </test>
-<test id="s1-t5" name="Test DELETE User" line="34">
+<test id="s1-t5" name="Test DELETE User" line="33">
 <kw name="POST Create User" type="SETUP">
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-07-15T03:25:24.476350" level="INFO">${data} = {'name': 'Yourname', 'job': 'Your Position'}</msg>
+<msg time="2024-07-15T03:30:00.055086" level="INFO">${data} = {'name': 'Yourname', 'job': 'Your Position'}</msg>
 <var>${data}</var>
 <arg>name=${name}</arg>
 <arg>job=${job}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-07-15T03:25:24.476350" elapsed="0.000000"/>
+<status status="PASS" start="2024-07-15T03:30:00.055086" elapsed="0.000000"/>
 </kw>
-<kw name="Post Request">
-<msg time="2024-07-15T03:25:24.477346" level="FAIL">No keyword with name 'Post Request' found.</msg>
+<kw name="POST Request">
+<msg time="2024-07-15T03:30:00.056082" level="FAIL">No keyword with name 'POST Request' found.</msg>
 <var>${response}</var>
 <arg>${BASE_URL}/users</arg>
 <arg>json=${data}</arg>
-<status status="FAIL" start="2024-07-15T03:25:24.477346" elapsed="0.000000">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.056082" elapsed="0.000000">No keyword with name 'POST Request' found.</status>
 </kw>
 <return>
 <value>${response}</value>
-<status status="NOT RUN" start="2024-07-15T03:25:24.477346" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-07-15T03:30:00.056082" elapsed="0.000000"/>
 </return>
 <arg>Yourname</arg>
 <arg>Your Position</arg>
 <doc>Send a POST request to create a new user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.476350" elapsed="0.000996">No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.055086" elapsed="0.000996">No keyword with name 'POST Request' found.</status>
 </kw>
 <doc>Verify that we can delete an existing user</doc>
-<status status="FAIL" start="2024-07-15T03:25:24.476350" elapsed="0.000996">Setup failed:
-No keyword with name 'Post Request' found.</status>
+<status status="FAIL" start="2024-07-15T03:30:00.055086" elapsed="0.000996">Setup failed:
+No keyword with name 'POST Request' found.</status>
 </test>
-<status status="FAIL" start="2024-07-15T03:25:24.446450" elapsed="0.031893"/>
+<status status="FAIL" start="2024-07-15T03:30:00.023192" elapsed="0.033887"/>
 </suite>
 <statistics>
 <total>
@@ -164,13 +148,11 @@ No keyword with name 'Post Request' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-07-15T03:25:24.441499" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 44: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-07-15T03:25:24.442492" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 50: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-07-15T03:25:24.442492" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 57: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-07-15T03:25:24.442492" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 64: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-07-15T03:25:24.442492" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 70: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2024-07-15T03:25:24.446450" level="ERROR">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 9: Setting variable '${CREATE_USER_ID} None' failed: Invalid variable name '${CREATE_USER_ID} None'.</msg>
-<msg time="2024-07-15T03:25:24.460403" level="ERROR">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 2: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+<msg time="2024-07-15T03:30:00.018244" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 45: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-07-15T03:30:00.019245" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 52: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-07-15T03:30:00.019245" level="WARN">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 58: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-07-15T03:30:00.023192" level="ERROR">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 8: Setting variable '${CREATE_USER_ID} None' failed: Invalid variable name '${CREATE_USER_ID} None'.</msg>
+<msg time="2024-07-15T03:30:00.038142" level="ERROR">Error in file 'C:\Users\PC1\Documents\GitHub\ChomChob-Test\Section 3 - Automate Testing API Skills\api.robot' on line 2: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
