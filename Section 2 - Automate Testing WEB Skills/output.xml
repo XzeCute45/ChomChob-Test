@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.11 on win32)" generated="2024-07-15T02:29:13.841469" rpa="false" schemaversion="5">
+<suite id="s1" name="Valid Nejavu" source="C:\Users\PC1\Desktop\ของลักกี้เอง\Tester\ทดลองเทสงาน\valid_nejavu.robot">
+<test id="s1-t1" name="กดปุ่ม “ใส่ตระกร้า” หนังสือทุกเล่มแถวที่หนึ่ง" line="35">
+<kw name="Open Website" owner="resoursetest">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:13.962084" level="INFO">Opening browser 'chrome' to base url 'https://www.nejavu.com/'.</msg>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-15T02:29:13.962084" elapsed="3.186977"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T02:29:17.149061" elapsed="0.032264"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T02:29:17.181325" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-07-15T02:29:13.961088" elapsed="3.221233"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-15T02:29:17.182321" elapsed="0.001995"/>
+</kw>
+<kw name="Click Close Modal" owner="resoursetest">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:17.185311" level="INFO">Clicking element 'class=close-modal'.</msg>
+<arg>class=close-modal</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:17.184316" elapsed="0.035879"/>
+</kw>
+<status status="PASS" start="2024-07-15T02:29:17.184316" elapsed="0.035879"/>
+</kw>
+<kw name="Click Button Cartoon" owner="resoursetest">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:17.221192" level="INFO">Clicking element 'xpath=//a[@href='https://www.nejavu.com/cartoon']'.</msg>
+<arg>xpath=//a[@href='${CARTOON_URL}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:17.221192" elapsed="2.940015"/>
+</kw>
+<status status="PASS" start="2024-07-15T02:29:17.220195" elapsed="2.941012"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${BOOK_TITLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.161207" elapsed="0.015457"/>
+</kw>
+<kw name="Get Book Titles" owner="resoursetest">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>(${BOOK_TITLE})[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.177661" elapsed="0.285174"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.463831" elapsed="0.001993"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:20.478292" level="INFO">${Title1} = โบรุโตะ -ทู บลู วอร์เทกซ์- เล่ม 1</msg>
+<var>${Title1}</var>
+<arg>(${BOOK_TITLE})[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.466821" elapsed="0.012466"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:20.488260" level="INFO">${Title2} = ชุด SOLANIN เพลงนี้ของเราสองคน เล่ม 1-2 (จบ)</msg>
+<var>${Title2}</var>
+<arg>(${BOOK_TITLE})[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.479287" elapsed="0.008973"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:20.496265" level="INFO">${Title3} = COLOR COLLECTION (เล่มเดียวจบ)</msg>
+<var>${Title3}</var>
+<arg>(${BOOK_TITLE})[3]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.488260" elapsed="0.008005"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:20.505234" level="INFO">${Title4} = SHY ฮีโร่ขี้อายหัวใจไฟเตอร์ เล่ม 4</msg>
+<var>${Title4}</var>
+<arg>(${BOOK_TITLE})[4]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.496265" elapsed="0.008969"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:20.513176" level="INFO">${Title5} = วะวะวะวะแวมไพร์กับนายเวอร์จิ้น เล่ม 3</msg>
+<var>${Title5}</var>
+<arg>(${BOOK_TITLE})[5]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.505234" elapsed="0.007942"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-07-15T02:29:20.513176" level="INFO">${book_list} = ['โบรุโตะ -ทู บลู วอร์เทกซ์- เล่ม 1', 'ชุด SOLANIN เพลงนี้ของเราสองคน เล่ม 1-2 (จบ)', 'COLOR COLLECTION (เล่มเดียวจบ)', 'SHY ฮีโร่ขี้อายหัวใจไฟเตอร์ เล่ม 4', 'วะวะวะวะแวมไพร์กับนายเวอร์จิ้น เล่ม 3']</msg>
+<var>${book_list}</var>
+<arg>${Title1}</arg>
+<arg>${Title2}</arg>
+<arg>${Title3}</arg>
+<arg>${Title4}</arg>
+<arg>${Title5}</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.513176" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${book_list}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.513176" elapsed="0.000998"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-07-15T02:29:20.514174" level="INFO">${book_list} = ['โบรุโตะ -ทู บลู วอร์เทกซ์- เล่ม 1', 'ชุด SOLANIN เพลงนี้ของเราสองคน เล่ม 1-2 (จบ)', 'COLOR COLLECTION (เล่มเดียวจบ)', 'SHY ฮีโร่ขี้อายหัวใจไฟเตอร์ เล่ม 4', 'วะวะวะวะแวมไพร์กับนายเวอร์จิ้น เล่ม 3']</msg>
+<arg>${book_list}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.514174" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-15T02:29:20.177661" elapsed="0.336513"/>
+</kw>
+<kw name="Add Books To Cart" owner="resoursetest">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:20.522144" level="INFO">${buttons} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="7ef8a0f09d7a3c33e931540dd9529f78", element="f.8616FE5746EF8E8BBD482626E5EF057C.d.63C8186BEF9C07702762FA858518DE70.e.362")&gt;, &lt;selenium.webdri...</msg>
+<var>${buttons}</var>
+<arg>${button_xpath}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.515175" elapsed="0.006969"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-07-15T02:29:20.522144" level="INFO">Length is 25.</msg>
+<msg time="2024-07-15T02:29:20.522144" level="INFO">${length} = 25</msg>
+<var>${length}</var>
+<arg>${buttons}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-07-15T02:29:20.522144" elapsed="0.000000"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-07-15T02:29:21.655024" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-15T02:29:21.655024" level="FAIL">Element with locator '/' not found.</msg>
+<arg>${button_xpath}[${index+1}]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-07-15T02:29:20.522144" elapsed="1.133877">Element with locator '/' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${button_xpath}[${index+1}]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-15T02:29:21.656021" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//div[contains(text(),'เพิ่มสินค้าในตระกร้าสำเร็จ')]</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-07-15T02:29:21.656021" elapsed="0.000000"/>
+</kw>
+<var name="${index}">0</var>
+<status status="FAIL" start="2024-07-15T02:29:20.522144" elapsed="1.133877">Element with locator '/' not found.</status>
+</iter>
+<var>${index}</var>
+<value>${length}</value>
+<status status="FAIL" start="2024-07-15T02:29:20.522144" elapsed="1.133877">Element with locator '/' not found.</status>
+</for>
+<arg>${ADD_TO_CART_BUTTON}</arg>
+<status status="FAIL" start="2024-07-15T02:29:20.515175" elapsed="1.140846">Element with locator '/' not found.</status>
+</kw>
+<kw name="Click Check Cart" owner="resoursetest">
+<status status="NOT RUN" start="2024-07-15T02:29:21.656922" elapsed="0.000000"/>
+</kw>
+<kw name="Verify Book In Cart" owner="resoursetest">
+<status status="NOT RUN" start="2024-07-15T02:29:21.656922" elapsed="0.000000"/>
+</kw>
+<kw name="Take Screenshot" owner="resoursetest">
+<status status="NOT RUN" start="2024-07-15T02:29:21.656922" elapsed="0.000000"/>
+</kw>
+<kw name="Delete Book" owner="resoursetest">
+<status status="NOT RUN" start="2024-07-15T02:29:21.656922" elapsed="0.000000"/>
+</kw>
+<kw name="Complete to Delete Book In Cart" owner="resoursetest">
+<status status="NOT RUN" start="2024-07-15T02:29:21.656922" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-07-15T02:29:21.656922" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-07-15T02:29:13.960089" elapsed="7.697863">Element with locator '/' not found.</status>
+</test>
+<doc>A test suite with a single test for valid login</doc>
+<status status="FAIL" start="2024-07-15T02:29:13.842465" elapsed="7.815487"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Valid Nejavu">Valid Nejavu</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
